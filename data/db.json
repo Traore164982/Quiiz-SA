@@ -1,0 +1,32 @@
+{
+    "users":[
+        {
+            "nom":"Traoré",
+            "prenom":"Mohamed",
+            "login":"traore@gmail.com",
+            "password":"Passer",
+            "role":"Joueur",
+            "score":10
+            
+        },{
+            "nom":"Mbaye",
+            "prenom":"Tahir",
+            "login":"mbaye@gmail.com",
+            "password":"Passer",
+            "role":"Joueur",
+            "score":16
+            
+        },
+        {
+            "nom":"Soumaré",
+            "prenom":"Seynabou",
+            "login":"soumare@gmail.com",
+            "password":"Passer",
+            "role":"Admin",
+            "score":13
+            
+        }
+    
+    
+    ]
+}

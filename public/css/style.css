@@ -1,0 +1,271 @@
+body{
+    background-image: url("../img/img-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#container{
+    width:500px;
+    margin:0 auto;
+    margin-top:2%;
+}
+#container_ins{
+    width:700px;
+    margin:0 auto;
+    margin-top:2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/* Bordered form */
+#plaisir{
+    height: 10vh;
+    background-color: rgb(8, 62, 66);
+}
+form {
+    width:100%;
+    padding: 20px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+#container_ins form {
+    width:55%;
+    padding: 20px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+#lo{
+    width:45%;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#log h1{
+    width: 55%;
+    padding: 0%;
+    margin-bottom: 50px;
+    line-height: 50px;
+    margin-left: 10px;
+}
+#container_ins h3{
+    line-height: 10px;
+    margin: 0%;
+}
+p{
+    line-height: 10px;
+    margin: 0%;
+    margin-bottom: 10px;
+}
+#plaisir h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#log span{
+    margin-right: 20px;
+    margin-top: 30px;
+    font-size: 30px;
+}
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    line-height: 50px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+#container_ins input[type=text],#container_ins input[type=password]{
+    width: 100%;
+    line-height: 20px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/* Set a style for all buttons */
+input[type=submit] {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(81,191,208);
+    color: white;
+    padding: 10px 10px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    line-height: 40px;
+}
+#container_ins input[type=submit]{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(81,191,208);
+    color: white;
+    padding: 10px 10px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    line-height: 15px;
+    display: flex;
+    flex-direction: row;
+}
+#container_ins #fi{
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgb(81,191,208);
+    color: white;
+    padding: 5px 5px;
+    margin: 4px 0px 0px 0px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    line-height: 15px;
+}
+#av{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#av span{
+    margin-top: 5px;
+}
+input[type=submit]:hover {
+    background-color: white;
+    color: rgb(81,191,208);
+    border: 1px solid #53af57;
+}
+a{
+    text-decoration: none;
+    color: dimgrey;
+    font-weight: bold;
+    margin-left: 40px;
+    font-size: 25px;
+}
+#log{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 5vh;
+    padding: 0px;
+    color: white;
+    background-color: rgb(81,191,208);
+}
+#lo img{
+    margin-top: 20px;
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+}
+#lo span{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#container_list{
+    width:70%;
+    margin:0 auto;
+    background-color: white;
+    margin-top:2%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    justify-content: center;
+}
+#deconnect{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(21, 177, 201);
+}
+#deconnect input{
+    background-color: rgb(3, 80, 92);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    height: 50%;
+    margin-top: 20px;
+}
+#deconnect input:hover{
+    background-color: white;
+    color: rgb(3, 80, 92);
+}
+#mainn{
+display: flex;
+flex-direction: row;
+justify-content: center;
+border: 1px solid green;
+}
+#affiche{
+    background-color: white;
+    border: 2px solid yellow;
+    width: 33%;
+    margin-left: 10px;
+    height: 90%;
+    margin: 10% 0px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+
+}
+#profil img{
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+    margin-left: 10%;
+    margin-top: 10px;
+}
+
+#list{
+    background-color: white;
+    text-align: center;
+    width: 60%;
+    height: 500px;
+
+}
+#list input{
+    margin-top: 10px;
+    margin-right: -65%;
+    color: white;
+    font-size: 18px;
+    border: rgb(21, 177, 201);
+    background-color: rgb(21, 177, 201);
+}
+#list input:hover{
+    color: rgb(21, 177, 201);
+    background-color: white;
+    border: 1px solid black;
+}
+#list div{
+    border: 1px solid rgb(21, 177, 201);
+    height: 80%;
+    width: 80%;
+    margin: auto;
+    border-radius: 5%;
+}
+.liste{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.liste img{
+    max-width: 30px;
+    max-height: 30px;
+    margin: 15px;
+}
+.liste a{
+    margin-left: 5%;
+    line-height: 50px;
+}

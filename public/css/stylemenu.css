@@ -1,0 +1,27 @@
+#Heade{
+    height: 10vh;
+    background-color: initial;
+    border: 5px solid #696969;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.active{
+    color: blue;
+}
+li{
+    list-style: none;
+    text-align: center;
+    display: inline;
+    margin-top: 1%;
+}
+ul li a{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+.menu:hover{
+    color: orangered;
+}

@@ -23,10 +23,21 @@
             "login":"soumare@gmail.com",
             "password":"Passer",
             "role":"Admin",
-            "score":13
+            "score":0
             
         }
     
     
+    ],
+    "questions":[
+        {
+            "question":"La Date de l'Hégire ?",
+            "a":"632",
+            "b":"627",
+            "c":"632",
+            "d":"622",
+            "correct":"d"
+            
+        }
     ]
 }

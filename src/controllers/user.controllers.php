@@ -22,6 +22,9 @@ if($_SERVER["REQUEST_METHOD"]=="GET"){
         if($_REQUEST['action']=="liste"){
             require_once(PATH_Views."user".DIRECTORY_SEPARATOR."liste.joueur.html.php");
         }
+        if($_REQUEST['action']=="liste_q"){
+            require_once(PATH_Views."user".DIRECTORY_SEPARATOR."liste.questions.html.php");
+        }
     }
 }
 

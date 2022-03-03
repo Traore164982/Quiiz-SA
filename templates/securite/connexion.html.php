@@ -23,7 +23,7 @@
                 <input type="password" placeholder="Password" name="password">
 
                 <input type="submit" id='submit' value='Connexion'>
-                <a href="#">S'inscrire pour jouer</a>
+                <a href="<?= WEB_ROOT."?controller=user&action=inscription"?>">S'inscrire pour jouer</a>
             </form>
         </div>
 

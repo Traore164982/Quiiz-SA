@@ -16,26 +16,21 @@
                     <div class="liste"><a href="">Créer Question</a><img src="/img/Icônes/ic-ajout.png" alt=""></div>
                 </div>
                 <div id="list">
-                    <h2>Liste des Joueurs par score</h2>
+                    <h2>Liste des Questions</h2>
                     <div>
                         <?php
-                            $users = json_to_array("users");
-                            echo "<table>";
-                            echo "<tr>";
-                            echo  "<td>Nom</td>";
-                            echo  "<td>Prenom</td>";
-                            echo  "<td>Score</td>";
-                            echo "</tr>";
-                            foreach ($users as $user) {
-                                if ($user['role']=="Joueur") {
-                                    echo "<tr>";
-                                    echo "<td>".$user['nom']."</td>";
-                                    echo "<td>".$user['prenom']."</td>";
-                                    echo "<td>".$user['score']."</td>";
-                                    echo "</tr>";  
-                                }
+                            $questions = json_to_array("questions");
+                            echo "<ol>";
+                            foreach ($questions as $q) {
+                                    echo "<li>".$q['question']."</li>";
+                                    echo "<ul>";
+                                    echo "<li>".$q['a']."</li>";
+                                    echo "<li>".$q['b']."</li>";
+                                    echo "<li>".$q['c']."</li>";
+                                    echo "<li>".$q['d']."</li>";
+                                    echo "</ul>";  
                             }
-                            echo "</table>";
+                            echo "</ol>";
                         ?>
                     </div>
                     <input type="button" value="Suivant">

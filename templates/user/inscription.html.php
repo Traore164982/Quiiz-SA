@@ -1,43 +1,58 @@
 <div id="container_ins">
             <!-- zone de connexion -->
             
-            <form action="<?=WEB_ROOT?>" method="POST">
+            <form action="<?=WEB_ROOT?>" method="POST" id="form">
             <input type="hidden" name="controller" value="user">
             <input type="hidden" name="action" value="inscription">
-            <?php if(isset($errors['inscription'])):?>
+                <?php if(isset($errors['inscription'])):?>
                     <p style="color: red;"><?=$errors['inscription']?></p>
                 <?php endif?>
                     <h3>S'inscrire</h3><br>
                     <p>Pour tester votre niveau de culture générale</p>
                     <hr>
-                <?php if(isset($errors['prenom'])):?>
+               <?php if(isset($errors['prenom'])):?>
                     <p style="color: red;"><?=$errors['prenom']?></p>
                 <?php endif?>
-                <label><b>Prénom</b></label>
-                <input type="text" placeholder="Mohamed" name="prenom" id="ins">
+                <div class="form-control">
+                    <label><b>Prénom</b></label>
+                    <input type="text" placeholder="Mohamed" name="prenom" id="prenom" class="ins">
+                    <small>Error message</small>
+                </div>
                 <?php if(isset($errors['nom'])):?>
                     <p style="color: red;"><?=$errors['nom']?></p>
                 <?php endif?>
+               <div class="form-control"> 
                 <label><b>Nom</b></label>
-                <input type="text" placeholder="Traoré" name="nom" class="ins">
-                <?php if(isset($errors['login'])):?>
+                <input type="text" placeholder="Traoré" name="nom" id="nom" class="ins" >
+                <small>Error message</small>
+            </div>
+            <?php if(isset($errors['login'])):?>
                     <p style="color: red;"><?=$errors['login']?></p>
-                <?php endif?>
+                    <?php endif?>
+            <div class="form-control">
                 <label><b>Login</b></label>
-                <input type="text" placeholder="traore@gmail.com" name="login" class="ins">
-                <?php if(isset($errors['password'])):?>
+                <input type="text" placeholder="traore@gmail.com" name="login" class="ins" id="login">
+                <small>Error message</small>
+            </div>
+            <?php if(isset($errors['password'])):?>
                     <p style="color: red;"><?=$errors['password']?></p>
-                <?php endif?>
+                    <?php endif?>
+            <div class="form-control">
                 <label><b>Password</b></label>
-                <input type="password" placeholder="Password" name="password" class="ins">
-                <?php if(isset($errors['cPassword'])):?>
+                <input type="password" placeholder="Password" name="password" class="ins" id="password" >
+                <small>Error message</small>
+            </div>
+            <?php if(isset($errors['cPassword'])):?>
                     <p style="color: red;"><?=$errors['cPassword']?></p>
-                <?php endif?>
+                    <?php endif?>
+            <div class="form-control">
                 <label><b>Confirm Password</b></label>
-                <input type="password" placeholder="Confirm Password" name="cPassword" class="ins">
+                <input type="password" placeholder="Confirm Password" name="cPassword" class="ins" id="cPassword"  >
+                <small>Error message</small>
+            </div>
                     <div id="av">
                         <span>Avatar</span>
-                        <input type="button" value="Choisir un fichier" id="fi">
+                        <input type="file" value="Choisir un fichier" id="fi">
                     </div>
                 <input type="submit"  value='Créer compte'>
             </form>

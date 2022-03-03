@@ -1,3 +1,8 @@
+:root{
+    --success-color: #2ecc71;
+    --error-color: #e74c3c;
+}
+
 body{
     background-image: url("../img/img-bg.jpg");
     background-size: cover;
@@ -212,12 +217,12 @@ border: 1px solid green;
 }
 #affiche{
     background-color: white;
-    border: 2px solid yellow;
+    
     width: 33%;
     margin-left: 10px;
     height: 90%;
     margin: 10% 0px;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 5px 5px 5px 5px rgba(0, 0, 0, 0.24);
 
 }
 #profil img{
@@ -233,7 +238,6 @@ border: 1px solid green;
     text-align: center;
     width: 60%;
     height: 500px;
-
 }
 #list input{
     margin-top: 10px;
@@ -268,4 +272,43 @@ border: 1px solid green;
 .liste a{
     margin-left: 5%;
     line-height: 50px;
+}
+
+table{
+    width: 100%;
+    font-size: 25px;
+}
+
+.form-control input:focus{
+    outline: 0;
+    border-color: #777;
+}
+
+.form-control.success input{
+    border-color: var(--success-color);
+}
+
+.form-control.error input{
+    border-color: var(--error-color);
+}
+
+.form-control small{
+    color: var(--error-color);
+    visibility: hidden;
+}
+
+.form-control.error small{
+    visibility: visible;
+}
+.form input[type=button]{
+    cursor: pointer;
+    background-color: #3498db;
+    border: 2px solid #3498db;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
 }

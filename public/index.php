@@ -18,4 +18,4 @@ include_once(dirname(dirname(__FILE__))."/templates".DIRECTORY_SEPARATOR."includ
 
  require_once dirname(dirname(__FILE__))."/config".DIRECTORY_SEPARATOR."router.php";
 
- require_once(PATH_Views."includes".DIRECTORY_SEPARATOR."footer.html.php");
+ require_once(dirname(dirname(__FILE__))."/templates".DIRECTORY_SEPARATOR."includes".DIRECTORY_SEPARATOR."footer.html.php");

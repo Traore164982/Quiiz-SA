@@ -5,6 +5,8 @@ const login = document.getElementById('login');
 const password = document.getElementById('password');
 const password2 = document.getElementById('cPassword');
 
+
+
 //Functions-------------------------------------------------------------
 function showError(input, message) {//Afficher les messages d'erreur
     const formControl = input.parentElement;
@@ -15,14 +17,14 @@ function showError(input, message) {//Afficher les messages d'erreur
 //accueil
 function showSuccess(input) {
     const formControl = input.parentElement;
-    formControl.className = 'form-control success'; 
+    formControl.className = 'form-control success';
 }
 //
 function checkEmail(input) {//Tester si l'email est valide :  javascript : valid email
- if(testEmail(input)){
+    if (testEmail(input)) {
         showSuccess(input);
     } else {
-        showError(input,`Email is not valid!`);
+        showError(input, `Email is not valid!`);
     }
 }
 function testEmail(input) {//Tester si l'email est valide :  javascript : valid email
@@ -38,8 +40,8 @@ function testEmail(input) {//Tester si l'email est valide :  javascript : valid 
 function checkRequired(inputArray) {// Tester si les champs ne sont pas vides
     inputArray.forEach(input => {
         if (input.value.trim() === '') {
-            showError(input,`${getFieldName(input)} is required`);
-        }else{
+            showError(input, `${getFieldName(input)} is required`);
+        } else {
             showSuccess(input);
         }
     });
@@ -51,12 +53,12 @@ function getFieldName(input) {//Retour le nom de chaque input en se basant sur s
 }
 //
 function checkLength(input, min) {//Tester la longueur de la valeur  d'un input
-   const re = input.value;
+    const re = input.value;
     const number = /[0-9]/;
-   const letter = /[a-zA-Z]/;
-    if( (re.length < min) || !number.test(re)  || !letter.test(re)){
+    const letter = /[a-zA-Z]/;
+    if ((re.length < min) || !number.test(re) || !letter.test(re)) {
         showError(input, "Invalid Password");
-    }else{
+    } else {
         showSuccess(input);
     }
 }
@@ -68,14 +70,17 @@ function checkPasswordMatch(input1, input2) {
     }
 }
 
-form.addEventListener('submit',function(e){
-    if(!testEmail(login)){
+form.addEventListener('submit', function (e) {
+    if (!testEmail(login)) {
         e.preventDefault();
         checkRequired([nom, prenom, login, password, password2]);
         checkLength(password, 6);
         checkEmail(login);
-        checkPasswordMatch(password,password2);
+        checkPasswordMatch(password, password2);
     }
-   
+
 
 });
+
+//fonction de stockage Json
+

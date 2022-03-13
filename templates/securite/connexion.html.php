@@ -1,7 +1,6 @@
 
         <div id="container">
             <!-- zone de connexion -->
-            
             <form action="<?=WEB_ROOT?>" method="POST">
             <input type="hidden" name="controller" value="securite">
             <input type="hidden" name="action" value="connexion">
@@ -23,7 +22,7 @@
                 <input type="password" placeholder="Password" name="password">
 
                 <input type="submit" id='submit' value='Connexion'>
-                <a href="<?= WEB_ROOT."?controller=user&action=inscription"?>">S'inscrire pour jouer</a>
+                <a href="<?=WEB_ROOT."?controller=user&action=inscription"?>">S'inscrire pour jouer</a>
             </form>
         </div>
 

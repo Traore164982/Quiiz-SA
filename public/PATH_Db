@@ -1,0 +1,10 @@
+[
+    {
+        "nom": "Ndiaye",
+        "prenom": "Oumy",
+        "login": "Ndiaye@gmail.com",
+        "password": "Passer",
+        "role": "Joueur",
+        "score": 0
+    }
+]

@@ -10,5 +10,17 @@
 </head>
 <body>
     <div id="plaisir">
+        <img src="/img/logo-QuizzSA.png" alt="">
         <h1>Le Plaisir de Jouer</h1>
     </div>
+    <div id="accueil">
+  <!--   <ul>
+        <li><a href="">Accueil</a></li>
+        <li><a href="">Jouer au Quizz</a></li>
+        <?php if(is_Admin()):?>
+        <li><a href="<?=WEB_ROOT."?controller=user&action=liste_q"?>">Liste des Joueurs</a></li>
+        <li><a href="<?=WEB_ROOT."?controller=user&action=liste"?>">Liste des Questions</a></li>
+        <?php endif?>
+        <li><a href="">Deconnexion</a></li>
+    </ul> -->
+</div>

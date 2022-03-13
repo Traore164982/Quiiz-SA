@@ -21,17 +21,5 @@
                     <div class="liste"><a href="<?=WEB_ROOT.DIRECTORY_SEPARATOR."?controller=user&action=liste"?>">Liste Joueurs</a><img src="/img/Icônes/ic-liste-active.png" alt=""></div>
                     <div class="liste"><a href="<?=WEB_ROOT."?controller=question&action=Create"?>">Créer Question</a><img src="/img/Icônes/ic-ajout.png" alt=""></div>
                 </div>
-                <div id="list">
-                    <h2>Liste des Joueurs par score</h2>
-                    <div id="list_j">
-                        <?php
-                            listejoueur();
+                        <?=require_once(ROOT."templates".DIRECTORY_SEPARATOR."user".DIRECTORY_SEPARATOR."inscription.html.php");
                         ?>
-                    </div>
-                    <input type="button" value="Suivant">
-                </div>
-            </div>
-            
-        </div>
-
- 

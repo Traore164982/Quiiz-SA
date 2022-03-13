@@ -1,7 +1,7 @@
 <div id="container_ins">
             <!-- zone de connexion -->
             
-            <form action="<?=WEB_ROOT?>" method="POST" id="form">
+            <form action="" method="POST" id="form">
             <input type="hidden" name="controller" value="user">
             <input type="hidden" name="action" value="inscription">
                 <?php if(isset($errors['inscription'])):?>
@@ -52,12 +52,16 @@
             </div>
                     <div id="av">
                         <span>Avatar</span>
-                        <input type="file" value="Choisir un fichier" id="fi">
-                    </div>
-                <input type="submit"  value='Créer compte'>
+                        <input type="button" value="Choisir un fichier" id="fi">
+<!--                         <input type="file"  name="profil" id="avatar">
+ -->                    </div>
+                <input type="submit"  value='Créer compte' name="submit">
+                <p class="er"><?php echo @$er ?></p>
+                <p class="success"><?php echo @$success ?></p>
             </form>
             <div id="lo">
                 <img src="/img/-1_orig.jpg" alt=""><br>
                 <span>Avatar du Joueur</span>
             </div>
         </div>
+</div>

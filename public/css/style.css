@@ -2,7 +2,9 @@
     --success-color: #2ecc71;
     --error-color: #e74c3c;
 }
-
+*{
+    margin: 0%;
+}
 body{
     background-image: url("../img/img-bg.jpg");
     background-size: cover;
@@ -22,14 +24,29 @@ body{
     width:700px;
     margin:0 auto;
     margin-top:2%;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 /* Bordered form */
 #plaisir{
+    margin: 0%;
     height: 10vh;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
     background-color: rgb(8, 62, 66);
+}
+#plaisir h1{
+    margin-left: 40%;
+}
+#plaisir img{
+    margin-left: 2%;
+}
+#plaisir img{
+    max-width: 30%;
+    max-height: 100%;
 }
 form {
     width:100%;
@@ -76,7 +93,6 @@ p{
 }
 #log span{
     margin-right: 20px;
-    margin-top: 30px;
     font-size: 30px;
 }
 /* Full-width inputs */
@@ -125,6 +141,20 @@ input[type=submit] {
     display: flex;
     flex-direction: row;
 }
+#container_ad input[type=submit]{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(81,191,208);
+    color: white;
+    padding: 10px 10px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    line-height: 5px;
+    display: flex;
+    flex-direction: row;
+}
 #container_ins #fi{
     font-size: 16px;
     font-weight: bold;
@@ -137,13 +167,25 @@ input[type=submit] {
     width: 50%;
     line-height: 15px;
 }
+#container_ad #fi{
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgb(81,191,208);
+    color: white;
+    padding: 5px 5px;
+    margin: 4px 0px 0px 0px;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    line-height: 15px;
+}
 #av{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 #av span{
-    margin-top: 5px;
+    margin-top: 2px;
 }
 input[type=submit]:hover {
     background-color: white;
@@ -188,6 +230,16 @@ a{
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
     justify-content: center;
 }
+#container_ad{
+    width:70%;
+    margin:0 auto;
+    background-color: white;
+    margin-top:2%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    justify-content: center;
+}
 #deconnect{
     width: 100%;
     height: 10vh;
@@ -197,17 +249,31 @@ a{
     justify-content: space-around;
     background-color: rgb(21, 177, 201);
 }
-#deconnect input{
+/* #deconnect input{
     background-color: rgb(3, 80, 92);
     color: white;
     font-weight: bold;
     font-size: 20px;
     height: 50%;
     margin-top: 20px;
+} */
+#deconnect a{
+
+    background-color: rgb(3, 80, 92);
+    color: dimgray;
+    font-weight: bold;
+    font-size: 23px;
+    width: 15%;
+    height: 55%;
+    margin-top: 20px;
+    text-decoration: none;
 }
-#deconnect input:hover{
-    background-color: white;
-    color: rgb(3, 80, 92);
+#deconnect a:hover{
+    background-color: rgb(3, 80, 92);
+    color: white;
+}
+#deconnect h1{
+    margin-top: 2%;
 }
 #mainn{
 display: flex;
@@ -217,7 +283,6 @@ border: 1px solid green;
 }
 #affiche{
     background-color: white;
-    
     width: 33%;
     margin-left: 10px;
     height: 90%;
@@ -229,6 +294,7 @@ border: 1px solid green;
     max-width: 100px;
     max-height: 100px;
     border-radius: 50%;
+    border: 5px solid #3498db;
     margin-left: 10%;
     margin-top: 10px;
 }
@@ -237,7 +303,118 @@ border: 1px solid green;
     background-color: white;
     text-align: center;
     width: 60%;
-    height: 500px;
+    height: auto;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 5px 5px 5px 5px rgba(0, 0, 0, 0.24);
+    margin: 10px 0px 10px 20px;
+    border-radius: 5%;
+
+}
+#list_j{
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+#list_creaq{
+    background-color: white;
+    text-align: center;
+    width: 60%;
+    margin: 10px 0px 10px 20px;
+    height: auto;
+    border-radius: 5%;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 5px 5px 5px 5px rgba(0, 0, 0, 0.24);
+
+}
+
+#list_creaq h2{
+    margin-top: 5px;
+}
+#list_crea{
+    background-color: white;
+    border-radius: 5%;
+    text-align: center;
+    margin: 10px 0px 10px 20px;
+    width: 60%;
+    height: auto;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 5px 5px 5px 5px rgba(0, 0, 0, 0.24);
+
+}
+#list_creaq div input{
+    margin-top: 0px;
+    margin-right: -5%;
+    color: black;
+    width: 40%;
+    font-size: 18px;
+    border: 2px solid rgb(21, 177, 201);
+}
+#cre_rep{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.labela{
+    margin-top: 30px;
+}
+#list_creaq div input[type=number]{
+    margin-top: 10px;
+    margin-right: -5%;
+    color: black;
+    width: 10%;
+    line-height: 50px;
+    font-size: 18px;
+    border: 2px solid rgb(21, 177, 201);
+}
+
+#list_creaq input[type=submit]{
+    margin-left: 50%;
+    margin-top: 20%;
+    position: relative;
+    width: 32%;
+}
+
+#list_crea input[type=submit]{
+    width: 45%;
+    line-height: 10%;
+}
+#list_creaq div select{
+    margin-top: 10px;
+    margin-right: -5%;
+    color: black;
+    width: 30%;
+    line-height: 50px;
+    font-size: 18px;
+    border: 2px solid rgb(21, 177, 201);
+}
+#list_creaq div .form-control{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+#list_creaq div input[type=button]{
+    margin-top: 10px;
+    margin-right: -10%;
+    color: white;
+    width: 10%;
+    line-height: 25px;
+    font-size: 55px;
+    border: 2px solid rgb(21, 177, 201);
+    background-color: rgb(21, 177, 201);
+}
+#list_creaq div textarea{
+    margin-top: 10px;
+    margin-right: -5%;
+    color: black;
+    width: 50%;
+    line-height: 40px;
+    font-size: 18px;
+    border: 2px solid rgb(21, 177, 201);
+}
+#list_creaq div label{
+    width: 40%;
+}
+#plus{
+    width: 10%;
+    height: 100%;
 }
 #list input{
     margin-top: 10px;
@@ -247,11 +424,21 @@ border: 1px solid green;
     border: rgb(21, 177, 201);
     background-color: rgb(21, 177, 201);
 }
-#list input:hover{
+
+#list_crea input{
+    margin-top: 10px;
+    margin-right: -65%;
+    color: white;
+    font-size: 18px;
+    border: rgb(21, 177, 201);
+    background-color: rgb(21, 177, 201);
+}
+#list_crea input:hover{
     color: rgb(21, 177, 201);
     background-color: white;
     border: 1px solid black;
 }
+
 #list div{
     border: 1px solid rgb(21, 177, 201);
     height: 80%;
@@ -259,6 +446,13 @@ border: 1px solid green;
     margin: auto;
     border-radius: 5%;
 }
+#list_crea div{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    border-radius: 5%;
+}
+
 .liste{
     display: flex;
     flex-direction: row;
@@ -311,4 +505,195 @@ table{
     padding: 10px;
     margin-top: 20px;
     width: 100%;
+}
+.liste:hover{
+    color: white;
+    background-color: #3498db;
+    padding-left: 20px;
+}
+
+#container_list a:hover{
+    color: white;
+}
+
+#accueil{
+    text-align: center;
+    margin-top: 2%;
+    background-color: #3498db;
+    color: white;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+#accueil ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+#accueil ul li{
+    list-style: none;
+   text-align: center;
+}
+
+#accueil ul li a{
+   color: white;
+   width: 100%;
+}
+#accueil ul li:hover{
+   padding-left: 5px;
+   color: #777;
+ }
+
+ #ins_Ad{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+ }
+ #ins_Ad #Ad{
+    height: 100%;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+ #ins_Ad form{
+    width: 60%;
+    height: 90%;
+    border-radius: 5%;
+}
+
+ #ins_Ad form .form-control{
+     width: 100%;
+     height: 14%;
+     display: flex;
+     flex-direction: row;
+ }
+ #ins_Ad .form-control input{
+    width: 60%;
+}
+#ins_Ad .form-control input[type=file]{
+    width: 60%;
+    height: 50%;
+    margin-left: 30%;
+    margin-top: 0%;
+}
+#ins_Ad .form-control label{
+    width: 30%;
+}
+ #ins_Ad form div input{
+     height: 12px;
+ }
+ #ins_Ad #lo{
+    margin-top: 0%;
+    width: 32%;
+    height: 50%;
+}
+ #ins_Ad #lo img{
+     width: 80%;
+ }
+ #lo img{
+    border: 10px solid #3498db;
+ }
+#Error404{
+    text-align: center;
+}
+#Error404 h1{
+    font-size:200px;
+    color: #3498db;
+    font-weight: bold;
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+#Error404 a{
+    font-size:50px;
+    color: #3498db;
+    font-weight: bold;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    background-color: white;
+    border-radius: 9999px;
+}
+#Error404 a:hover{
+    color: white;
+    background-color: #3498db;
+}
+#Error404 h2{
+    font-size: 70px;
+    color: #3498db;
+    font-weight: bold;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    letter-spacing: 20px;
+    
+}
+ #Error404 hr{
+     border: 10px solid white;
+     background-color: white;
+     width: 90%;
+     margin-left: 5%;
+     border-radius: 9999px;
+     margin-bottom: 50px;
+    }
+
+#ajout{
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 100px;
+}
+
+
+ #ajout div{
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content:space-between;
+ }
+
+ #ajout div input[type=text]{
+    width: 50%;
+    height: 25px;
+}
+#ajout div label{
+    color: dimgrey;
+    font-weight: bold;
+}
+
+#ajout div *{
+    margin-left: 5px;
+}
+
+#cor{
+    margin-left: 20%;
+}
+
+#form2{
+    width:90%;
+    padding: 20px;
+    margin-left: 2%;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+/*     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+ */
+}
+
+#textQ{
+    max-width: 80%;
+    max-height: 100px;
+}
+#depl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+}
+
+#depl *{
+    border-radius: 9999px;
+    margin: 0px 20px;
+    background-color: #3498db;
+    width: 30%;
+    height: 60%;
+    text-align: center;
 }
